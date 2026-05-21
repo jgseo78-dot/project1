@@ -1212,7 +1212,7 @@
             ${m.summaryLoading ? '<span class="loading"></span>요약 중...' : (m.summary ? '🔄 요약 다시 생성' : '✨ AI 요약 생성')}
           </button>
           <button class="action-btn" onclick="downloadSummary(${m.id})" ${!m.summary ? 'disabled' : ''}>📄 요약 저장</button>
-          <button class="action-btn" onclick="downloadTranscript(${m.id})" ${!hasTranscript ? 'disabled' : ''}>📋 대화록 저장!!!!!!</button>
+          <button class="action-btn" onclick="downloadTranscript(${m.id})" ${!hasTranscript ? 'disabled' : ''}>📋 대화록 저장</button>
           <button class="action-btn" onclick="downloadAudio(${m.id})">🎵 음성</button>
           <button class="action-btn danger" onclick="deleteMeeting(${m.id})">🗑 삭제</button>
         </div>
